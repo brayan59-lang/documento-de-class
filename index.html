@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Virtual</title>
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+<h1>
+Ejercicio 1: Simulador de Transferencia de Calor
+(Ley de Enfriamiento)
+</h1>
+
+<form action="">
+
+    <label for="par1">
+        Temperatura inicial (T₀) [°C]:
+    </label>
+
+    <input  type="number"id="par1" name="par1"required><br><br>
+
+    <label for="ts">Temperatura del entorno (Tₛ) [°C]:</label>
+<input type="number" id="ts" name="ts" required>
+
+    <br><br>
+<label for="k"> Constante de enfriamiento (k):</label>
+
+    <input  type="number" id="k" name="k" step="0.01" required>
+
+    <br><br>
+
+<label for="tiempo">Tiempo (t) [horas]:</label>
+
+<input type="number"id="tiempo"name="tiempo"min="0"required>
+<br><br>
+    <button type="button" id="calcularCalorBtn">Calcular Temperatura Final </button>
+
+</form>
+<div id="resultadoCalor">
+
+</div>
+
+<hr>
+<h2>Calculador de Combinaciones Complejas (Caso Sorteo)</h2>
+
+  <form id="combinacionesForm">
+        <fieldset>
+            <legend>Grupo 1</legend>
+            <label for="n1">n₁ (total de números):</label>
+            <input type="number" id="n1" name="n1"  required>
+            <label for="r1">r₁ (cantidad a elegir):</label>
+            <input type="number" id="r1" name="r1" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Grupo 2</legend>
+            <label for="n2">n₂ (total de números):</label>
+            <input type="number" id="n2" name="n2" required>
+            <label for="r2">r₂ (cantidad a elegir):</label>
+            <input type="number" id="r2" name="r2" required>
+        </fieldset>
+
+        <button type="button" id="calcularCombinacionesBtn">Calcular Combinaciones</button>
+    </form>
+<div id="resultadoCombinaciones">
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
